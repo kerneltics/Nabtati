@@ -1,0 +1,51 @@
+/* Start Header Style-------------*/
+nav { 
+  padding-bottom: 35px;
+  .navbar-nav{
+    gap: 25px;
+  }
+  @include breakPoint("mobile") {
+    .navbar-nav {
+      gap: 5px;
+      
+    }
+  }
+  .nav-link {
+    font-size: clamp(16px, 20px, $font-size-vw);
+    color: $f5f5-color;
+    font-weight: 800;
+    font-family: inherit;
+  }
+  @include breakPoint("medium") {
+    .sign-div {
+      margin-bottom: 30px;
+    }
+  }
+  .sign-link {
+    font-size: clamp(12px, 20px, $font-size-vw);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: $white-color;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: 2px solid;
+  }
+  .sign-in{
+    background-color: $dark-green-color;
+    border-color: transparent;
+    &:hover{
+      background-color: transparent;
+      border: 2px solid $dark-green-color;
+    }
+  }
+  .new-sign-in{
+    border: 2px solid $dark-green-color;
+    color: $dark-green-color;
+    &:hover{
+      background-color: $dark-green-color;
+      color: $white-color;
+    }
+  }
+}
+/* End Header Style-------------*/

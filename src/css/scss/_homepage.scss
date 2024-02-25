@@ -1,0 +1,158 @@
+/* Start Main Hero Style-------------*/
+.main-hero {
+  // height: 100dvh;
+  background-color: $light-green-color;
+}
+.text-hero {
+  .title {
+    display: inline-flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 18px;
+    h1,
+    & > span {
+      font-weight: 700;
+      font-size: clamp(25px, 50px, 4vw);
+      color: $white-color;
+    }
+    span {
+      color: $dark-green-color;
+    }
+  }
+
+  p {
+    font-size: clamp(20px, 50px, $font-size-vw);
+    font-weight: 600;
+    color: $white-color;
+    & > span {
+      color: $dark-green-color;
+    }
+  }
+}
+/* End Main Hero Style-------------*/
+/*Start Famous Plants Style*/
+.swiper {
+  padding: 60px 100px !important;
+  .swiper-slide{
+    background-color: $white-color;
+  }
+}
+.famous-plants .slid-div {
+  border-radius: 25px;
+  direction: ltr;
+  margin: auto;
+  padding: 30px;
+  min-height: 400px;
+  align-items: center;
+}
+@include breakPoint("mobile") {
+  .famous-plants .slid-div {
+    padding: 10px;
+    min-height: 650px;
+  }
+}
+
+/* Responsev Style Swiper */
+@media (max-width: 768px) {
+  .swiper {
+    padding: 30px !important;
+  }
+
+  .famous-plants .slid-div {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.famous-plants .slid-div .image-plant {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+.famous-plants .slid-div .image-plant img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.famous-plants .slid-div .info {
+  text-align: center;
+  background-color: $white-color;
+  border-radius: 40px;
+}
+
+.famous-plants .slid-div .info h5 {
+  color: $dark-green-color;
+  font-size: clamp(20px, 50px, $font-size-vw);
+  font-weight: 800;
+  line-height: normal;
+}
+
+.famous-plants .slid-div .info p {
+  color: $dark-green-color;
+  font-size: clamp(14px, 16px, $font-size-vw);
+  font-weight: 900;
+  padding: 10px;
+}
+
+.famous-plants .slid-div .info a.green-btn {
+  display: block;
+  margin: 10px 100px;
+  padding: 10px;
+}
+@include breakPoint("mobile") {
+  .famous-plants .slid-div .info a.green-btn {
+    margin: 10px;
+  }
+}
+
+/*End Famous Plants Style*/
+
+/*Start Products Style*/
+.caption .descrp {
+  color: $text-color;
+  font-size: clamp(15px, 22px, $font-size-vw);
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
+
+.card-bottom {
+  gap: 15px;
+}
+
+.card-text {
+  color: #808080;
+  font-size: clamp(12px, 18px, $font-size-vw);
+  font-weight: 500;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.card-bottom .btn-card {
+  color: $thre-light-brown-color;
+  border: 1px solid $dark-green-color;
+  background-color: $dark-green-color;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.card-bottom .btn-card:hover {
+  color: $dark-green-color;
+  background-color: $white-color;
+}
+
+.card-bottom .like-icon {
+  border-radius: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: $thre-light-brown-color;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/*End Products Style*/
